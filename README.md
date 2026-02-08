@@ -7,30 +7,19 @@
 
 # Kullanılan Teknolojiler ve Kütüphaneler
 * Veri Kazıma: Playwright
-
 * Veri Analizi & Manipülasyon: Pandas, NumPy
-
 * Doğal Dil İşleme (NLP): NLTK (Tokenization, Stopwords)
-
 * Görselleştirme: Matplotlib, Seaborn
 
 # Proje Adımları
-1. Veri Toplama (scrape.py)
-Belirlenen hedef tweet altındaki yanıtlar, kullanıcı adı ve metin içeriği ile birlikte playwright kullanılarak çekilir ve tweet_replies.csv olarak kaydedilir.
+1. Veri Toplama (scrape.py) => Belirlenen hedef tweet altındaki yanıtlar, kullanıcı adı ve metin içeriği ile birlikte playwright kullanılarak çekilir ve tweet_replies.csv olarak kaydedilir.
 
-2. Veri Temizleme (data-cleaning.ipynb)
-Gereksiz sütunların (tarih vb.) kaldırılması.
+2. Veri Temizleme (data-cleaning.ipynb) => Gereksiz sütunların (tarih vb.) kaldırılması. Tweet sahibinin kendi yanıtlarının veri setinden elenmesi. 
+   Metinlerin tamamen küçük harfe çevrilmesi, noktalama işaretlerinin ve Türkçe etkisiz kelimelerin (stopwords) temizlenmesi.
 
-Tweet sahibinin kendi yanıtlarının veri setinden elenmesi.
-
-Metinlerin tamamen küçük harfe çevrilmesi, noktalama işaretlerinin ve Türkçe etkisiz kelimelerin (stopwords) temizlenmesi.
-
-3. Analiz ve Sıralama (analysing.ipynb)
-Temizlenmiş metinler içinden belirli araç markalarının (Egea, Clio, Corolla vb.) tespiti.
-
-Yanıtların "pozitif" veya "negatif" olarak sınıflandırılması.
-
-Olumlu yorum alan araç modellerinin frekans analizi yapılarak en çok önerilen modellerin listelenmesi.
+3. Analiz ve Sıralama (analysing.ipynb) => Temizlenmiş metinler içinden belirli araç markalarının (Egea, Clio, Corolla vb.) tespiti.
+   Yanıtların "pozitif" veya "negatif" olarak sınıflandırılması.
+   Olumlu yorum alan araç modellerinin frekans analizi yapılarak en çok önerilen modellerin listelenmesi.
 
 # Örnek Çıktı
 Çalışma sonucunda, kullanıcıların bütçe ve performans odaklı en çok önerdiği modeller (örneğin: Fiat Egea, Renault Clio) görselleştirilerek sunulmaktadır.
