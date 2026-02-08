@@ -1,19 +1,18 @@
 ## Bu proje, Twitter (X) üzerindeki belirli bir tartışma başlığı altındaki yanıtları çekerek, otomobil marka ve modellerine dair kullanıcı deneyimlerini ve tercihlerini analiz eder. Projenin temel amacı, ham sosyal medya verisinden anlamlı araç tavsiyeleri ve popülerlik sıralamaları üretmektir.
 # Özellikler
-Dinamik Veri Kazıma: Playwright kullanarak Twitter'ın dinamik yapısından (infinite scroll) binlerce yanıtı otomatik olarak toplar.
+* Dinamik Veri Kazıma: Playwright kullanarak Twitter'ın dinamik yapısından (infinite scroll) binlerce yanıtı otomatik olarak toplar.
 
-Gelişmiş Veri Ön İşleme: Metinleri NLP teknikleriyle (Tokenization, Stopwords temizliği) analiz edilebilir hale getirir.
-
-Duygu ve İçerik Analizi: Yanıtlar içinden sadece otomobil modellerine odaklanır, olumlu geri bildirimleri filtreler ve modelleri popülerliğine göre sıralar.
+* Gelişmiş Veri Ön İşleme: Metinleri NLP teknikleriyle (Tokenization, Stopwords temizliği) analiz edilebilir hale getirir.
+* Duygu ve İçerik Analizi: Yanıtlar içinden sadece otomobil modellerine odaklanır, olumlu geri bildirimleri filtreler ve modelleri popülerliğine göre sıralar.
 
 # Kullanılan Teknolojiler ve Kütüphaneler
-Veri Kazıma: Playwright
+* Veri Kazıma: Playwright
 
-Veri Analizi & Manipülasyon: Pandas, NumPy
+* Veri Analizi & Manipülasyon: Pandas, NumPy
 
-Doğal Dil İşleme (NLP): NLTK (Tokenization, Stopwords)
+* Doğal Dil İşleme (NLP): NLTK (Tokenization, Stopwords)
 
-Görselleştirme: Matplotlib, Seaborn
+* Görselleştirme: Matplotlib, Seaborn
 
 # Proje Adımları
 1. Veri Toplama (scrape.py)
