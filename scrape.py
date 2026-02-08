@@ -17,7 +17,6 @@ def scrape_replies():
     with sync_playwright() as p:
         try:
             browser = p.chromium.launch(headless=False, args=["--start-maximized"])
-            # 'twitter_auth.json' dosyasının login.py ile aynı klasörde olduğundan emin ol
             context = browser.new_context(storage_state="twitter_auth.json", no_viewport=True)
             page = context.new_page()
         except FileNotFoundError:
@@ -32,7 +31,7 @@ def scrape_replies():
         time.sleep(3)
 
         for i in range(SCROLL_COUNT):
-            print(f"🔄 Sayfa kaydırılıyor... ({i + 1}/{SCROLL_COUNT})")
+            print(f"🔄Sayfa kaydırılıyor... ({i + 1}/{SCROLL_COUNT})")
 
             tweets = page.locator('article[data-testid="tweet"]').all()
 
